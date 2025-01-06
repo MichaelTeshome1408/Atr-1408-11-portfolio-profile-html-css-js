@@ -7,7 +7,14 @@
     <title>Personal Website</title>
 
     
+  
+
+    
    
+    
+
+    
+    <link rel="stylesheet" href="../css/style.css">
     
 
 </head>
@@ -15,31 +22,41 @@
     <header>
       
 
-      <a href="index.html" class="logo"><img src="../images/logo-img.jpg" alt=""></a>
+      <a href="../../index.html" class="logo"><img src="../images/logo-img.jpg" alt="image-logo"></a>
 
-        <div id="class-bar" class="fas fa-class"></div>
+        
     
         <nav class="navbar">
-            <ul>
-                <li><a   href="index.html">home</a></li>
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" alt="close-tab" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+                <li><a   href="../../index.html">home</a></li>
                 <li><a href="about.html">about</a></li>
                 <li><a class="active" href="profile.html">profile</a></li>
                 <li><a  href="gallary.html">gallery</a></li>
                 <li><a href="hobbies.html">hobbies</a></li>
                 <li><a  href="contact us.html">contact us</a></li>
             </ul>
+            <ul>
+              <li class="hideOnMobile"><a href="../../index.html">home</a></li>
+              <li class="hideOnMobile"><a href="about.html">about</a></li>
+              <li class="hideOnMobile"><a class="active" href="profile.html">profile</a></li>
+               <li class="hideOnMobile"><a href="gallary.html">gallery</a></li>
+              <li class="hideOnMobile"><a href="hobbies.html">hobbies</a></li>
+              <li class="hideOnMobile"><a href="contact us.html">contact us</a></li>
+              <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg"  alt="menu-tab" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+          </ul>
         </nav>
     </header>
 
 <section class="profile" id="profile">
 
-<h1 class="heading"> my <span>profile</span> </h1>
-<div class="content" data-aos="fade-right">
+<h1 class="heading"> my <span>profile</span> </h1><br>
+<div class="content">
 
-<p>I am a highly competent IT professional with a proven track record in designing websites, networking and managing databases. I have strong technical skills as well as excellent interpersonal skills, enabling me to interact with a wide range of clients. I am eager to be challenged in order to grow and further improve my IT skills. My greatest passion is in life is using my technical know-how to benefit other people and organisations.
+<p class="profile-p">I am a highly competent IT professional with a proven track record in designing websites, networking and managing databases. I have strong technical skills as well as excellent interpersonal skills, enabling me to interact with a wide range of clients. I am eager to be challenged in order to grow and further improve my IT skills. My greatest passion is in life is using my technical know-how to benefit other people and organisations.
   The candidate correctly highlights their areas of expertise, such as designing websites, networking and managing databases. It is clear from these examples that the individual has a broad understanding of IT and would be able to work on a wide range of IT projects.
   The candidate reassures the prospective employer that although they are working in a very technical field, they have the ability to work with a wide range of people. Interpersonal and communication skills are key to any job.</p>
-</div>
+</div><br>
 
 
 
@@ -47,8 +64,8 @@
     </head>
     <body>
     
-    <h2>my profile <table></table></h2>
-    <div class="content" data-aos="fade-left">
+    <h2>my profile</h2><br>
+    <div class="content">
     
     <table>
       <tr>
@@ -91,10 +108,10 @@
 
         <div class="box">
             <h3>contact info</h3>
-            <p> <i class="fas fa-map-marker-alt"></i> Addis Abeba, Ethiopia 400104 </p>
-            <p> <i class="fas fa-envelope"></i> Mikit121992@gmail.com </p>
-            <p> <i class="fas fa-envelope"></i> It.michael.teshome@gmail.com </p>
-            <p> <i class="fas fa-home"></i>michael teshome </p>
+            <p>  Addis Abeba, Ethiopia 400104 </p>
+            <p>  Mikit121992@gmail.com </p>
+            <p>  It.michael.teshome@gmail.com </p>
+            <p>  michael teshome </p>
         </div>
 
         <div class="box">
@@ -104,7 +121,7 @@
 
         <div class="box">
             <h3>quick links </h3>
-            <a href="index.html">home</a>
+            <a href="../../index.html">home</a>
             <a href="about.html">about</a> 
             <a href="profile.html">profile</a>
             <a href="gallary.html">gallery</a>
@@ -116,6 +133,14 @@
     </div>
 
 </div>
+
+
+
+
+
+<script src="js/script.js"></script>
+
+
 
 
 
